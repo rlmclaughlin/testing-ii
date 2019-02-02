@@ -63,9 +63,9 @@ export default class Display extends React.Component {
         <div>
           <h1>Stats Board</h1>
           <h2>Balls:</h2> 
-          <h2>{this.state.balls}</h2>
+          <h2 data-testid="balls">{this.state.balls}</h2>
           <h2>Strikes:</h2> 
-          <h2>{this.state.strikes}</h2>
+          <h2 data-testid="strikes">{this.state.strikes}</h2>
           <Dashboard
              ballHandler={this.ballHandler}
              strikeHandler={this.strikeHandler}
